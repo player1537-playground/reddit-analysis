@@ -18,7 +18,7 @@ public class App {
 
 		RedditComment comment = new RedditComment(json);
 		for (Map.Entry<String, Object> entry : comment.getData().entrySet()) {
-			System.out.println(String.format("%s: %s",
+			System.out.println(String.format("comment[%s] = %s",
 			                                 entry.getKey(),
 			                                 entry.getValue()));
 		}
